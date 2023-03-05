@@ -20,20 +20,23 @@ public class SignUpTest extends BaseTest{
     }
 
 @Test
-public void test01_emailFiled(){
+public void test01_emailFiled() {
 
-        loginPage.clickLoginSignUp();
-        loginPage.clickSignUp();
-        signUpPage.setEmailFiled("shoval245.com");
-        signUpPage.clickEndSignup();
+    loginPage.clickLoginSignUp();
+    loginPage.clickSignUp();
+    signUpPage.setEmailFiled("shoval245.com");
+    signUpPage.clickEndSignup();
     String invalidEmail;
     driver.findElement(By.cssSelector("[class='parsley-type']"));
-    Assert.assertEquals("pleas enter a valid email","" );
-
-
-
-
+    Assert.assertEquals("pleas enter a valid email", "");
 }
+
+    public void test02(){}
+
+
+
+
+
 
 
 
